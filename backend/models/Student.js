@@ -1,6 +1,8 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-let studentSchema = new Schema(
+import mongoose from "mongoose";
+
+// const Schema = mongoose.Schema;
+
+const studentSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -13,7 +15,8 @@ let studentSchema = new Schema(
     },
   },
   {
-    collection: "students",
+    collection: "student",
   }
 );
-module.exports = mongoose.model("Student", studentSchema);
+
+export default mongoose.model('Student', studentSchema);

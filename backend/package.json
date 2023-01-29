@@ -4,10 +4,12 @@
   "description": "mern crud backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
